@@ -1,163 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Amour - Hecho con amor</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-/* Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+<header>
+    <h1>Mon Amour</h1>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#menu">Menu</a>
+        <a href="#specialties">Specialties</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
 
-/* Fonts & Body */
-body {
-    font-family: 'Playfair Display', 'Segoe UI', sans-serif;
-    background-color: #fffaf6;
-    color: #333;
-    line-height: 1.6;
-}
+<section class="hero">
+    <h2>Hecho con amor, constancia y ternura</h2>
+    <p>Handcrafted Mediterranean pastries inspired by family tradition and passion</p>
+    <button>Discover Our Pastries</button>
+</section>
 
-/* Header */
-header {
-    background: #f8b195;
-    padding: 20px 40px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-}
+<section id="about" class="section">
+    <h2>About Us</h2>
+    <p>
+        At <strong>Mon Amour</strong>, every pastry is a love letter from my grandmother. Inspired by vintage Mediterranean sweets,
+        biscuits, and cakes, we combine tradition with modern touches. Every ingredient, from our handmade flour to spices and pasta,
+        is crafted with care, creating flavors that tell a story of passion, elegance, and warmth.
+    </p>
+</section>
 
-header h1 {
-    color: #fff;
-}
+<section id="menu" class="section">
+    <h2>Our Menu</h2>
+    <div class="menu">
+        <div class="card">
+            <h3>Handmade Croissants</h3>
+            <p>Buttery, flaky, freshly baked every morning</p>
+            <span>$3.50</span>
+        </div>
+        <div class="card">
+            <h3>Chocolate Cake</h3>
+            <p>Rich, indulgent, and full of love</p>
+            <span>$5.00</span>
+        </div>
+        <div class="card">
+            <h3>Macarons</h3>
+            <p>Colorful, delicate, and traditional</p>
+            <span>$4.00</span>
+        </div>
+    </div>
+</section>
 
-nav a {
-    margin-left: 20px;
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-}
+<section id="specialties" class="section">
+    <h2>Specialties</h2>
+    <p>
+        We use traditional Mediterranean spices, homemade pasta, hand-milled flour, and handmade bakery tools.
+        Every product carries the warmth and love of family recipes passed down through generations.
+    </p>
+</section>
 
-nav a:hover {
-    text-decoration: underline;
-}
+<section id="contact" class="section contact">
+    <h2>Contact Us</h2>
+    <p>Email: hello@monamour.com</p>
+    <p>Phone: +1 234 567 890</p>
+</section>
 
-/* Hero Section */
-.hero {
-    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
-                url("https://images.unsplash.com/photo-1509401939139-4e1a8f7f46a2");
-    background-size: cover;
-    background-position: center;
-    color: #fff;
-    text-align: center;
-    padding: 120px 20px;
-}
+<footer>
+    <p>© 2025 Mon Amour - Made with love and care</p>
+</footer>
 
-.hero h2 {
-    font-size: 3rem;
-    margin-bottom: 10px;
-    text-shadow: 2px 2px 8px rgba(0,0,0,0.5);
-}
-
-.hero p {
-    font-size: 1.2rem;
-    text-shadow: 1px 1px 5px rgba(0,0,0,0.5);
-}
-
-.hero button {
-    padding: 12px 30px;
-    border: none;
-    background: #f67280;
-    color: white;
-    font-size: 1rem;
-    cursor: pointer;
-    border-radius: 25px;
-    margin-top: 20px;
-    transition: 0.3s;
-}
-
-.hero button:hover {
-    background: #f95c6c;
-}
-
-/* Sections */
-.section {
-    padding: 60px 20px;
-    text-align: center;
-}
-
-.section h2 {
-    margin-bottom: 20px;
-}
-
-/* Menu */
-.menu {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
-    margin-top: 30px;
-}
-
-.card {
-    background: #fff;
-    padding: 20px;
-    width: 250px;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    transition: 0.3s;
-}
-
-.card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 15px rgba(0,0,0,0.15);
-}
-
-.card span {
-    display: block;
-    margin-top: 10px;
-    font-weight: bold;
-    color: #f67280;
-}
-
-/* Contact Section */
-.contact {
-    background: #f8b195;
-    color: #fff;
-}
-
-/* Footer */
-footer {
-    background: #333;
-    color: #fff;
-    text-align: center;
-    padding: 15px;
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-    header {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    nav {
-        margin-top: 10px;
-    }
-
-    .hero h2 {
-        font-size: 2rem;
-    }
-
-    .menu {
-        flex-direction: column;
-        gap: 15px;
-    }
-
-    .card {
-        width: 80%;
-        margin: 0 auto;
-    }
-
-    .hero button {
-        width: 50%;
-    }
-}
+</body>
+</html>
 
