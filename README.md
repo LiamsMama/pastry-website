@@ -1,110 +1,35 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Segoe UI', sans-serif;
-}
+# Mon Amour - Pastry Shop Website
 
-body {
-    background-color: #fffaf6;
-    color: #333;
-}
+✨ **Hecho con amor, constancia y ternura** ✨
 
-header {
-    background: #f8b195;
-    padding: 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
+Welcome to **Mon Amour**, a handcrafted pastry shop inspired by family tradition and Mediterranean flavors.  
+Every pastry, biscuit, cake, and delicacy is made with love, passion, and care — just like my grandmother taught me.
 
-header h1 {
-    color: #fff;
-}
+## About
 
-nav a {
-    margin-left: 20px;
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-}
+Mon Amour brings vintage sweets to life, combining the warmth of tradition with modern elegance.  
+We bake using:
 
-.hero {
-    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
-                url("https://images.unsplash.com/photo-1509401939139-4e1a8f7f46a2");
-    background-size: cover;
-    background-position: center;
-    color: #fff;
-    text-align: center;
-    padding: 120px 20px;
-}
+- Handmade flour and dough  
+- Traditional Mediterranean spices  
+- Fresh, high-quality ingredients  
+- Handmade bakery tools  
 
-.hero h2 {
-    font-size: 3rem;
-    margin-bottom: 10px;
-}
+Every creation is a reflection of **love, consistency, and tenderness**.
 
-.hero button {
-    padding: 12px 30px;
-    border: none;
-    background: #f67280;
-    color: white;
-    font-size: 1rem;
-    cursor: pointer;
-    border-radius: 25px;
-}
+## Website Features
 
-.section {
-    padding: 60px 20px;
-    text-align: center;
-}
+- Elegant, soft, and grounded design  
+- Responsive layout for desktop and mobile  
+- Hero section with tagline and call-to-action  
+- Menu showcasing signature pastries  
+- Specialties highlighting traditional spices and handmade tools  
+- Contact section for orders and inquiries  
 
-.menu {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
-    margin-top: 30px;
-}
+## Installation / Local Setup
 
-.card {
-    background: #fff;
-    padding: 20px;
-    width: 250px;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-}
+To view the website locally:
 
-.card span {
-    display: block;
-    margin-top: 10px;
-    font-weight: bold;
-    color: #f67280;
-}
-
-.contact {
-    background: #f8b195;
-    color: #fff;
-}
-
-footer {
-    background: #333;
-    color: #fff;
-    text-align: center;
-    padding: 15px;
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-    header {
-        flex-direction: column;
-    }
-
-    nav {
-        margin-top: 10px;
-    }
-
-    .hero h2 {
-        font-size: 2rem;
-    }
-}
+1. Clone the repository:  
+   ```bash
+   git clone https://github.com/yourusername/mon-amour.git
